@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+body {
+    background: black;
+    margin: 0;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.navbar {
+    background: black;
+    padding: 1em;
+
+    .nav-logo {
+        text-decoration: none;
+        font-weight: bold;
+        color:white;
+        font-size: 1.2em;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+section {
+    padding: 50px 50px;
+}
+
+.home {
+    text-align: center;
+    .home-img {
+        max-width: 256px;
+        height: auto; 
+    }
+    .container {
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .subhead {
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 8px;
+        }
+    
+        
+        .home-cta{   
+            .cta-image {
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+.about-me {
+    text-align: center;
+    background-color: gray;
+    
+    h1 {
+        font-size: 48px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        font-size: 24px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+}
+
+.projects {
+    text-align: center;
+
+    h1 {
+        font-size: 48px;
+    }
+}
