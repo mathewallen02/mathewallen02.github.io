@@ -80,6 +80,10 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+.project :hover {
+    cursor: pointer
+}
+
 .project h3 {
     margin: 0;
 }
