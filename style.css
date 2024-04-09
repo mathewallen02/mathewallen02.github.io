@@ -129,8 +129,8 @@ nav ul li a {
 }
 
 .logo img {
-    width: 60%; /* Ensure the image fills the container */
-    height: 60%; /* Ensure the image fills the container */
+    width: 60px; /* Ensure the image fills the container */
+    height: 60px; /* Ensure the image fills the container */
 }
 
 .event-info {
