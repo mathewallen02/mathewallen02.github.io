@@ -156,3 +156,65 @@ footer {
 footer p {
     margin: 0;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-links li a:hover {
+    color: #ff8c00; /* Change color on hover */
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle for mobile */
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust as per your header height */
+        left: 0;
+        background-color: #333; /* Background color for mobile menu */
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .show-nav {
+        display: flex; /* Show nav links when menu-toggle is clicked */
+    }
+}
