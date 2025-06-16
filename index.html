@@ -1,129 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allen Mathew - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <h1>Allen Mathew</h1>
-            <nav>
-                <div class="menu-toggle">&#9776;</div> <!-- Add menu toggle for mobile -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Allen Mathew</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="logo">Allen Mathew</div>
                 <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Timeline</a></li>
-                    <li><a href="#contact">Contact</a></li>           
+                    <li><a href="#timeline">Timeline</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </nav>
 
-    <div class="opening">
-        <div class="container">
-            <h1>Allen Mathew</h1>
-        </div>
-    </div>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Allen Mathew</h1>
+                <p>Software Engineer</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/mathewallen02" target="_blank" class="icon-button" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/allenbmathew/" target="_blank" class="icon-button" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <section id="about" class="section">
-        <div class="container">
+        <section id="about" class="section">
             <h2>About Me</h2>
-            <p>I'm a Computer Science Major in my junior year at the Missouri University of Science & Technology</p>
-            <p>Skills:</p>
-            <ul>
-                <li>Python</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Java</li>
-                <li>VisualBasic</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-    </section>
+            <div class="about-content fade-in">
+                <div class="about-image">
+                    Picture here (eventually)
+                </div>
+                <div class="about-text">
+                    <p>I'm a Computer Science Major currently completing my final semester at the Missouri University of Science and Technology</p>
+            </div>
+        </section>
 
-
-    <section id="projects" class="section">
-        <div class="container">
+        <section id="projects" class="section">
             <h2>Projects</h2>
-            <div class="project" onclick="window.location.href='https://github.com/mathewallen02/Discord-Bot';" >
-                    <h3>Chat-GPT Discord Bot</h3>
-                    <p>A discord bot that can send and pull queries from OpenAi. Generates responses to user queries using OpenAi models such as Da-vinci and Chat-GPT and returns results as discord messages</p>
+            <div class="projects-grid">
+                <a href="https://github.com/CS4091/team-d-frontend" target="_blank" class="project-card fade-in">
+                    <h3>Capstone Project</h3>
+                    <p>Worked on the front end of Aero, an airplane route planning application.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </a>
+                <a href="https://github.com/mathewallen02/mathewallen02.github.io" target="_blank" class="project-card fade-in">
+                    <h3>Portfolio Website</h3>
+                    <p>This website</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Timeline</h2>
+        <section id="timeline" class="section">
+            <h2>My Journey</h2>
             <div class="timeline">
-                <div class="event">
-                    <div class="logo">
-                        <img src="img/1.jfif">
-                    </div>
-                    <div class="event-info">
-                        <h3>Exegy</h3>
-                        <h3>May 2024 - August 2024</h3>
-                        <p>As a Software Engineer Intern, I designed and implemented solutions to extract key statistics from raw market data, compiling them into optimized SQL databases for efficient data storage and retrieval </p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 2025</div>
+                        <h3>Software Engineer - Accenture Federal Services</h3>
+                        <p>Starting this August, I will be joining Accenture Federal Services as a Software Engineer.</p>
                     </div>
                 </div>
-                <div class="event">
-                    <div class="logo">
-                        <img src="img/1000007630.jfif">
-                    </div>
-                    <div class="event-info">
-                        <h3>iDeneti</h3>
-                        <h3>January 2024 - May 2024</h3>
-                        <p>As a full-stack developer I assist with the development of iDeneti's multipurpose digital identity management application</p>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2024</div>
+                        <h3>Software Engineering Intern - Exegy</h3>
+                        <p>As a Software Engineer Intern, I designed and implemented solutions to extract key statistics from raw market data, compiling them into optimized SQL databases for efficient data storage and retrieval</p>
                     </div>
                 </div>
-                <div class="event">
-                    <div class="logo">
-                        <img src="img/Missouri_S&T_logo.svg.png">
-                    </div>
-                    <div class="event-info">
-                        <h3>Missouri University of Science & Technology Computer Science Department</h3>
-                        <h3>December 2022 - January 2024</h3>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 2022</div>
+                        <h3>Computer Science Teaching Assistant - Missouri S&T</h3>
                         <p>I worked as a teaching assistant for the "Intro to Programming: C++" course at Missouri S&T. My work included grading homework assignments, writing file processing scripts, and assisting students with coursework</p>
                     </div>
                 </div>
-                <div class="event">
-                    <div class="logo">
-                        <img src="img/Missouri_S&T_logo.svg.png">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 2022</div>
+                        <h3>Freelance Developer - Groff Automation</h3>
+                        <p>Coordinated with Groff Automation’s development team to develop the Crystal Corral program</p>
+                        <p>Migrated legacy code from Visual Basic to C# to improve program performance</p>
+                        <p>Designed and implemented innovative methods for visualizing .rpt files</p>
                     </div>
-                    <div class="event-info">
-                        <h3>Missouri University of Science & Technology</h3>
-                        <h3>2021 - Present</h3>
-                        <p>As a student at Missouri University of Science and Technology, I'm currently studying Computer Science with an emphasis on Software Engineering</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 2021</div>
+                        <h3>Started Computer Science Journey</h3>
+                        <p>I began my B.S. in Computer Science at the Missouri University of Science and Technology </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: allenbmathew03@gmail.com</p>
-            <p>Discord: jallenm</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Allen Mathew</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
